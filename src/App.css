@@ -1,1 +1,132 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Basic styling */
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.header {
+  background-color: #2e3440;
+  padding: 1rem;
+}
+
+.header__title {
+  font-size: 2rem;
+  color: #f2f5fa;
+}
+
+.header__subtitle {
+  font-size: 1.25rem;
+  color: #f2f5fa;
+}
+
+.main {
+  padding: 1rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section__title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.section__text {
+  margin-bottom: 1rem;
+}
+
+.portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.portfolio-item {
+  background-color: #f2f5fa;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.portfolio-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.portfolio-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-description {
+  margin-bottom: 1rem;
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  background-color: #f2f5fa;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.contact-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.contact-text {
+  font-size: 1rem;
+}
+
+.footer {
+  background-color: #2e3440;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer__text {
+  color: #f2f5fa;
+}
+````src/index.js`:
+```jsx
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more:
+// https://bit.ly/CRA-vitals
+reportWebVitals();
