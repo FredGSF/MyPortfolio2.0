@@ -1,1 +1,13 @@
-
+node_modules/
+build/
+dist/
+public/
+src/serviceWorker.js
+yarn-debug.log
+yarn-error.log
+.yarn/*
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
